@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass=".indexRoot" stylesheets="@index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="1366.0" styleClass="indexTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#e31436" layoutX="206.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花购物商城" wrappingWidth="181.240234375">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="29.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="107.0" fitWidth="119.0" layoutX="75.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/logo.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="1103.0" layoutY="40.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" styleClass="indexCartBtn" text="购物车" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei" size="20.0" />
+               </font>
+            </Button>
+            <TextField layoutX="683.0" layoutY="42.0" prefHeight="34.0" prefWidth="229.0" promptText="在上亿商品中搜索">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </TextField>
+            <Button layoutX="912.0" layoutY="42.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="68.0" styleClass="indexSearchBtn" text="搜索" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="670.0" layoutY="91.0" text="前男友面膜" textFill="#e31436" />
+            <Label layoutX="742.0" layoutY="91.0" text="杰士邦零感" textFill="#999999" />
+            <Label layoutX="814.0" layoutY="91.0" text="python从入门到放弃" textFill="#999999" />
+            <ImageView fitHeight="120.0" fitWidth="673.0" layoutX="380.0" layoutY="16.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/index2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="-4.0" layoutY="130.0" prefHeight="648.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <AnchorPane prefHeight="2500.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
+               <children>
+                  <AnchorPane layoutY="7.0" prefHeight="4500.0" prefWidth="1366.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
+                           <children>
+                              <Line endX="1266.0" layoutX="101.0" layoutY="50.0" opacity="0.57" startX="-100.0" />
+                              <Button layoutX="684.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="首页">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="740.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="热销商品">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="828.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="每日团购">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="916.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="旧彩电">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="988.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="护肤用品">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="1076.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="洗护用品">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="1164.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="土特产">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="1236.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="地摊货">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <Hyperlink layoutX="89.0" layoutY="15.0" text="从化地沟油批发" />
+                        <Hyperlink layoutX="45.0" layoutY="15.0" text="热门：" />
+                        <Hyperlink layoutX="181.0" layoutY="15.0" text="当地人造鸡蛋" />
+                        <Line endX="10.0" layoutX="101.0" layoutY="735.0" opacity="0.5" startX="-100.0" />
+                        <Label layoutX="112.0" layoutY="721.0" prefHeight="27.0" prefWidth="86.0" text="热门商品">
+                           <font>
+                              <Font name="Microsoft YaHei" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="282.0" layoutY="734.0" opacity="0.49" startX="-90.0" />
+                        <AnchorPane id="promptContent" layoutX="35.0" layoutY="766.0" prefHeight="200.0" prefWidth="1246.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="194.0" prefWidth="263.0" style="-fx-background-color: #eee;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="51.0" layoutY="45.0" prefHeight="41.0" prefWidth="191.0" text="葱花大热门" textAlignment="CENTER" textFill="#e31436" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="21.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="30.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <ImageView fitHeight="73.0" fitWidth="94.0" layoutX="31.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/logo2.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="73.0" fitWidth="94.0" layoutX="157.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="157.0">
+                                       <image>
+                                          <Image url="@../../img/logo2.gif" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <GridPane layoutX="313.0" layoutY="65.0" prefHeight="200.0" prefWidth="983.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fitHeight="180.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+                                       <image>
+                                          <Image url="@../../indexImg/indexHotimg3.jpg" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="30.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fitHeight="180.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+                                       <image>
+                                          <Image url="@../../indexImg/indexHotimg2.jpg" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="30.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fitHeight="180.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowSpan="3">
+                                       <image>
+                                          <Image url="@../../indexImg/indexHotimg1.jpg" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="30.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fitHeight="180.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true" GridPane.rowSpan="3">
+                                       <image>
+                                          <Image url="@../../indexImg/indexHotimg4.jpg" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="30.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <Label opacity="0.8" prefHeight="75.0" prefWidth="245.0" styleClass="indexHotLabel" text="微软/Microsoft XBox one游戏手柄蓝牙无线控制器" textFill="WHITE" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                                       <children>
+                                          <Label layoutY="144.0" opacity="0.52" prefHeight="55.0" prefWidth="245.0" styleClass="indexHotLabel" text="雅顿 时空焕活胶囊精华液约30粒面部紧致淡纹补水雅顿 时空焕活胶囊精华液约30粒面部紧致淡纹补水" textFill="WHITE">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowSpan="3">
+                                       <children>
+                                          <Label layoutY="144.0" opacity="0.52" prefHeight="54.0" prefWidth="245.0" styleClass="indexHotLabel" text="男装/女装 (UT) MINIONS BS印花T恤(短袖) 409516 优衣库UNIQLO" textFill="WHITE">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowSpan="3">
+                                       <children>
+                                          <Label layoutY="144.0" opacity="0.52" prefHeight="53.0" prefWidth="245.0" styleClass="indexHotLabel" text="江中猴姑早餐米稀30天装 营养米糊冲饮麦片 原味900g" textFill="WHITE">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="50.0" opacity="0.71" prefHeight="413.0" prefWidth="1314.0" styleClass="indexPrompt" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Label layoutX="198.0" layoutY="708.0" text="HOT！！" textFill="#ee0808">
+                           <font>
+                              <Font name="Microsoft YaHei" size="20.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="1.0" layoutY="1009.0" opacity="0.88" prefHeight="40.0" prefWidth="1366.0" style="-fx-background-color: #e31436;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label layoutX="640.0" layoutY="6.0" text="吃货专区" textFill="WHITE" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="640.0">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="1049.0" opacity="0.85" prefHeight="850.0" prefWidth="1366.0" style="-fx-background-color: #e31634#dd3e3e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <GridPane layoutX="173.0" layoutY="77.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="95.0" minHeight="-Infinity" prefHeight="74.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="114.0" minHeight="81.0" prefHeight="114.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Button layoutX="115.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="4.0" layoutY="209.0" prefHeight="15.0" prefWidth="239.0" text="【三只松鼠_夏威夷果265gx2袋】零食坚果干果奶油味送开口器" textFill="#999999" />
+                                          <Label layoutX="27.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood3.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutY="198.0" prefHeight="34.0" prefWidth="236.0" styleClass="indexFoodLabel" text="韩国进口汤姆农场蜂蜜黄油扁桃仁 杏仁味零食35gX8袋" textFill="#999999">
+                                             <font>
+                                                <Font name="Microsoft YaHei" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="118.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="25.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood2.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="4.0" layoutY="195.0" prefHeight="34.0" prefWidth="236.0" styleClass="indexFoodLabel" text="韩国进口汤姆农场蜂蜜黄油扁桃仁 杏仁味零食35gX8袋" textFill="#999999">
+                                             <font>
+                                                <Font name="Microsoft YaHei" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="31.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.columnIndex="3" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood4.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="3.0" layoutY="195.0" prefHeight="34.0" prefWidth="236.0" styleClass="indexFoodLabel" text="韩国进口汤姆农场蜂蜜黄油扁桃仁 杏仁味零食35gX8袋" textFill="#999999">
+                                             <font>
+                                                <Font name="Microsoft YaHei" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></Pane>
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="120.0" layoutY="451.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="451.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="95.0" minHeight="-Infinity" prefHeight="74.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="109.0" minHeight="81.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood5.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="218.0" prefHeight="15.0" prefWidth="239.0" text="绿箭口香糖100片箭牌原味薄荷味批发休闲网红零食品大礼包" textFill="#999999" />
+                                          <Label layoutX="31.0" layoutY="259.0" text="¥ 19.90 " textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="249.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood6.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="217.0" prefHeight="15.0" prefWidth="239.0" text="乐事薯片40g*10送女友整箱零食大礼包批发包邮好吃的膨化小吃组合" textFill="#999999" />
+                                          <Label layoutX="31.0" layoutY="260.0" text="¥ 29.80" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="250.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood7.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="215.0" prefHeight="15.0" prefWidth="239.0" text="无穷食品旗舰店烤小鸡腿20只蜂蜜香辣味肉类零食小吃整箱批发熟食" textFill="#999999" />
+                                          <Label layoutX="31.0" layoutY="256.0" text="¥ 48.80" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="246.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.columnIndex="3" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexFood8.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="216.0" prefHeight="15.0" prefWidth="239.0" text="德芙牛奶巧克力3碗装混合口味送女友零食大礼盒装喜糖果批发包邮" textFill="#999999" />
+                                          <Label layoutX="30.0" layoutY="256.0" text="¥ 98.90" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="246.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                 </children>
+                              </GridPane>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="2.0" layoutY="1939.0" opacity="0.85" prefHeight="850.0" prefWidth="1366.0" style="-fx-background-color: #00B262;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <GridPane layoutX="206.0" layoutY="73.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="95.0" minHeight="-Infinity" prefHeight="74.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="109.0" minHeight="81.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="施巴sebamed德国进口去屑洗发露200控油止痒无硅油洗发水温和洗护" textFill="#999999" />
+                                          <Label layoutX="21.0" layoutY="256.0" text="¥ 74.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="246.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish2.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="224.0" prefHeight="15.0" prefWidth="239.0" text="多芬沐浴露深层营润1kg+多芬樱花甜香1kg+190g" textFill="#999999" />
+                                          <Button layoutX="122.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="31.0" layoutY="258.0" text="¥ 67.20 " textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish3.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="日本进口Dove多芬空气保湿无硅油洗发水护发素套装480g*2补水保湿" textFill="#999999" />
+                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="30.0" layoutY="258.0" text="¥ 129.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="3" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish4.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="224.0" prefHeight="15.0" prefWidth="239.0" text="阿迪达斯男士洗发水控油炭爽洗面奶沐浴露洗护套装" textFill="#999999" />
+                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="27.0" layoutY="258.0" text="¥ 68.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></Pane>
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="120.0" layoutY="442.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="95.0" minHeight="-Infinity" prefHeight="74.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="109.0" minHeight="81.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish5.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="220.0" prefHeight="15.0" prefWidth="239.0" text="阿道夫洗护套装品牌正品滋润轻柔丝滑留香洗发水+护发素多效可选" textFill="#999999" />
+                                          <Label layoutX="14.0" layoutY="259.0" text="¥ 110.00 " textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="122.0" layoutY="249.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish6.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="220.0" prefHeight="15.0" prefWidth="239.0" text="丝蕴无硅油洗发水润发乳水润洗护套装 清爽洗750ml*2护750ml" textFill="#999999" />
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 89.90 " textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish7.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="220.0" prefHeight="15.0" prefWidth="239.0" text="韩国进口LG睿嫣润膏无硅油洗护合一洗发水250ml*4瓶" textFill="#999999" />
+                                          <Label layoutX="20.0" layoutY="259.0" text="¥ 109.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="249.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="3" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexWish8.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="220.0" prefHeight="15.0" prefWidth="239.0" text="飘柔香氛洗护套装甜美花漾滋养柔滑女士洗发水300ml+护发素300ml" textFill="#999999" />
+                                          <Label layoutX="14.0" layoutY="260.0" text="¥ 79.00 " textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="250.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children></Pane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="1.0" layoutY="2789.0" opacity="0.85" prefHeight="40.0" prefWidth="1366.0" style="-fx-background-color: #7a45e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label layoutX="652.0" layoutY="7.0" text="数码馆" textFill="WHITE">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="1.0" layoutY="1899.0" opacity="0.85" prefHeight="40.0" prefWidth="1366.0" style="-fx-background-color: #00B262;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label layoutX="642.0" layoutY="6.0" text="洗护用品" textFill="WHITE" AnchorPane.leftAnchor="642.0" AnchorPane.rightAnchor="641.0">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="21.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="587.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/logo3.gif" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="2.0" layoutY="2829.0" opacity="0.85" prefHeight="850.0" prefWidth="1366.0" style="-fx-background-color: #7a45e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <GridPane layoutX="175.0" layoutY="82.0" prefHeight="309.0" prefWidth="1017.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="95.0" minHeight="-Infinity" prefHeight="74.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="109.0" minHeight="81.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="          Apple/苹果 iPhone X" textFill="#999999" />
+                                          <Label layoutX="14.0" layoutY="256.0" text="¥ 8316.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="121.0" layoutY="246.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital2.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="224.0" prefHeight="15.0" prefWidth="239.0" text="Huawei/华为 P20 pro官方旗舰店手机正品mate10" textFill="#999999" />
+                                          <Button layoutX="122.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 5088.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital3.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="vivo X21屏幕指纹版全面屏全网通4G智能手机vivox21" textFill="#999999" />
+                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 3598.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.columnIndex="3" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital4.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="224.0" prefHeight="15.0" prefWidth="239.0" text="Samsung/三星 Galaxy S9+ SM-G9650/DS 全网通 手机" textFill="#999999" />
+                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 6699.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="175.0" layoutY="438.0" prefHeight="309.0" prefWidth="1017.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="95.0" minHeight="-Infinity" prefHeight="74.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="109.0" minHeight="81.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital5.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="Apple/苹果 15 英寸 MacBook Pro Multi-Touch Bar 和 Touch ID 2.9GHz 处理器 512GB 存储容量" textFill="#999999" />
+                                          <Label layoutX="14.0" layoutY="256.0" text="¥ 22097.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="128.0" layoutY="246.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital6.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="2.0" layoutY="224.0" prefHeight="15.0" prefWidth="239.0" text="Microsoft/微软 Surface Pro M 4G 128G 笔记本平板电脑二合一" textFill="#999999" />
+                                          <Button layoutX="127.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥4099.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital7.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="AKG/爱科技 K701头戴式专业监听 通用发烧级 电脑音乐录音师耳机" textFill="#999999" />
+                                          <Button layoutX="127.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 1150.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexDigitalPane" GridPane.columnIndex="3" GridPane.rowSpan="4">
+                                       <children>
+                                          <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../indexImg/indexDigital8.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="1.0" layoutY="224.0" prefHeight="15.0" prefWidth="239.0" text="新款Canon/佳能EOS 77D 18-135mm 单反相机数码相机套机 保证正品" textFill="#999999" />
+                                          <Button layoutX="127.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 6538.00" textFill="#e31436">
+                                             <font>
+                                                <Font name="Microsoft YaHei Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="139.0" layoutY="3822.0" prefHeight="350.0" prefWidth="335.0" style="-fx-background-color: #2d78f4; -fx-background-radius: 3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="84.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="猜您喜欢">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="42.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="93.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/logo2.gif" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <GridPane hgap="10.0" layoutX="582.0" layoutY="3754.0" prefHeight="468.0" prefWidth="625.0" vgap="10.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="113.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="116.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Pane prefHeight="0.0" prefWidth="209.0" styleClass="indexLikePane" GridPane.rowSpan="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../indexImg/indexLike1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="-1.0" layoutY="171.0" prefHeight="48.0" prefWidth="213.0" styleClass="indexLikeLable" text="全套30册 儿童绘本0-3岁 周岁启蒙 幼儿早教书 宝宝故事书1-3 2岁 早教 婴儿书籍图书读物 国际获奖睡前故事书 培养好习惯小熊认知" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="97.0" prefWidth="208.0" styleClass="indexLikePane" GridPane.columnIndex="1" GridPane.rowSpan="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../indexImg/indexLike2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutY="171.0" prefHeight="48.0" prefWidth="213.0" styleClass="indexLikeLable" text="【大开本】小猪佩奇主题绘本全套5册 0-3-4-6周岁幼儿童宝宝睡前早教启蒙故事书读物 peppa pig粉红猪小妹佩琪幼儿园图画书籍正版" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="97.0" prefWidth="208.0" styleClass="indexLikePane" GridPane.columnIndex="2" GridPane.rowSpan="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../indexImg/indexLike1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="-2.0" layoutY="171.0" prefHeight="48.0" prefWidth="213.0" styleClass="indexLikeLable" text="全套30册 儿童绘本0-3岁 周岁启蒙 幼儿早教书 宝宝故事书1-3 2岁 早教 婴儿书籍图书读物 国际获奖睡前故事书 培养好习惯小熊认知" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                              <Pane prefHeight="160.0" prefWidth="209.0" styleClass="indexLikePane" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../indexImg/indexLike1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="-1.0" layoutY="201.0" prefHeight="48.0" prefWidth="213.0" styleClass="indexLikeLable" text="全套30册 儿童绘本0-3岁 周岁启蒙 幼儿早教书 宝宝故事书1-3 2岁 早教 婴儿书籍图书读物 国际获奖睡前故事书 培养好习惯小熊认知" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                              <Pane prefHeight="170.0" prefWidth="208.0" styleClass="indexLikePane" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../indexImg/indexLike1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="-2.0" layoutY="201.0" prefHeight="48.0" prefWidth="213.0" styleClass="indexLikeLable" text="全套30册 儿童绘本0-3岁 周岁启蒙 幼儿早教书 宝宝故事书1-3 2岁 早教 婴儿书籍图书读物 国际获奖睡前故事书 培养好习惯小熊认知" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                              <Pane prefHeight="177.0" prefWidth="208.0" styleClass="indexLikePane" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../indexImg/indexLike1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="-6.0" layoutY="201.0" prefHeight="48.0" prefWidth="213.0" styleClass="indexLikeLable" text="全套30册 儿童绘本0-3岁 周岁启蒙 幼儿早教书 宝宝故事书1-3 2岁 早教 婴儿书籍图书读物 国际获奖睡前故事书 培养好习惯小熊认知" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                           </children>
+                        </GridPane>
+                        <AnchorPane layoutX="1.0" layoutY="4393.0" prefHeight="107.0" prefWidth="1353.0" style="-fx-background-color: #eee;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="475.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/footerLogo1.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#999999" layoutX="501.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="粤公网安备 66666666号 ">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#999999" layoutX="667.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花公司版权所有@-200-2018" />
+                              <Hyperlink layoutX="636.0" layoutY="29.0" text="联系我们" />
+                              <Hyperlink layoutX="541.0" layoutY="29.0" text="关于我们" />
+                              <ImageView fitHeight="82.0" fitWidth="99.0" layoutX="859.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/logo3.gif" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="82.0" fitWidth="99.0" layoutX="373.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/logo3.gif" />
+                                 </image>
+                              </ImageView>
+                              <Hyperlink layoutX="733.0" layoutY="29.0" text="客服支持" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="4278.0" prefHeight="120.0" prefWidth="1366.0" style="-fx-background-color: #fff;" styleClass="indexBottom">
+                           <children>
+                              <ImageView fitHeight="120.0" fitWidth="1291.0" layoutX="170.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="91.8209228515625">
+                                 <image>
+                                    <Image url="@../../indexImg/indexBottom.PNG" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="promptContent" layoutX="93.0" layoutY="492.0" prefHeight="200.0" prefWidth="1246.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="263.0" style="-fx-background-color: #e31436;">
+                           <children>
+                              <Label layoutX="32.0" layoutY="43.0" prefHeight="41.0" prefWidth="191.0" text="葱花超级秒杀" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="40.0">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="80.0" layoutY="112.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" text="01">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="116.0" layoutY="112.0" prefHeight="36.0" prefWidth="30.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" text=" :" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="153.0" layoutY="112.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" text="59">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <GridPane layoutX="313.0" layoutY="65.0" prefHeight="200.0" prefWidth="983.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView accessibleRole="HYPERLINK" fitHeight="201.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true" styleClass="indexSecKillcontent" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                                 <image>
+                                    <Image url="@../../indexImg/indexPromptImg2.jpg" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin></ImageView>
+                              <ImageView accessibleRole="HYPERLINK" fitHeight="201.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true" styleClass="indexSecKillcontent" GridPane.columnIndex="2" GridPane.rowSpan="3">
+                                 <image>
+                                    <Image url="@../../indexImg/indexPromptImg3.jpg" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin></ImageView>
+                              <ImageView accessibleRole="HYPERLINK" fitHeight="201.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" styleClass="indexSecKillcontent" GridPane.columnIndex="3" GridPane.rowSpan="3">
+                                 <image>
+                                    <Image url="@../../indexImg/indexPromptImg4.jpg" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin></ImageView>
+                              <ImageView accessibleRole="HYPERLINK" fitHeight="201.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true" styleClass="indexSecKillcontent" GridPane.rowSpan="3">
+                                 <image>
+                                    <Image url="@../../indexImg/indexPromptImg.jpg" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

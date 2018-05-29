@@ -1,0 +1,90 @@
+.indexRoot,
+.indexTitle{
+	-fx-background-color:#fff;
+}
+.indexCartBtn,
+.indexSearchBtn{
+	-fx-background-color:#e31436;
+}
+.indexCartBtn:hover,
+.indexSearchBtn:hover{
+	-fx-background-color:#ad0c27;
+}
+.indexNavBtn{
+	-fx-background-color:#fff;
+	-fx-border-style:none;
+}
+.indexNavBtn:hover{
+	-fx-text-fill:#fff;
+	-fx-background-color:#000;
+}
+.indexPrompt{
+	-fx-background-image:url("../../img/index1.jpg");	
+}
+
+.indexPromptBtn{
+	-fx-background-color:#000;
+}
+.indexHotLabel{
+	-fx-background-color:#000;
+	-fx-opacity:0.8;
+}
+.indexHotLabel:hover{
+	-fx-background-color:#000;
+	-fx-opacity:1;
+}
+.indexFoodPane{
+	-fx-background-color:#fff;
+}
+.indexFoodPane:hover{
+	-fx-border-color:#e31436;
+	-fx-border-width:3;
+}
+.indexFoodBtn{
+	-fx-background-color:#fff;
+	-fx-border-color:#e31436;
+	-fx-border-radius:30;
+	-fx-border-width:3;
+}
+.indexFoodBtn:hover{
+	-fx-background-color:#e31436;
+	-fx-text-fill:#fff;
+	-fx-border-radius:30;
+	-fx-background-radius:30;
+	-fx-border-width:3;
+}
+.indexWishPane{
+	-fx-background-color:#fff;
+}
+.indexWishPane:hover{
+	-fx-border-color:#00B262;
+	-fx-border-width:3;
+}
+.indexWishLable{
+	-fx-background-color: #00B262;
+}
+.indexWishLable:hover{
+	 -fx-background-color:rgb(12, 107, 64);
+}
+.indexDigitalPane{
+	-fx-background-color:#fff;
+}
+.indexDigitalPane:hover{
+	-fx-border-color:#7a45e5;
+	-fx-border-width:3;
+}
+.indexLikeLable{
+	-fx-background-color: #444;
+}
+.indexLikeLable:hover{
+	-fx-background-color:#000;
+}.indexLikePane:hover{
+	-fx-border-color:#444;
+	-fx-border-width:3;
+}
+.indexBottom{
+	
+}
+.indexSecKillcontent:hover{
+	-fx-opacity:0.7;
+}

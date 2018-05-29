@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@signIn.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="60.0" layoutY="28.0" prefHeight="157.0" prefWidth="1346.0" styleClass="signInTop" AnchorPane.bottomAnchor="581.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Text fill="#e31436" layoutX="314.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花购物商城">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="34.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="162.0" fitWidth="163.0" layoutX="151.0" layoutY="-1.0" styleClass="logoImg">
+               <image>
+                  <Image url="@../../img/logo.jpg" />
+               </image>
+            </ImageView>
+            <MenuButton layoutX="14.0" layoutY="30.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="signInsearchBtn" text="浏览" textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Text fill="#1b1717" fontSmoothingType="LCD" layoutX="906.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="最差的产品，最贵的价钱">
+               <font>
+                  <Font name="MingLiU-ExtB" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="51.0" fitWidth="418.0" layoutX="829.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/signIn6.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="201.0" prefHeight="200.0" prefWidth="1151.0" styleClass="signMain" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="201.0">
+         <children>
+            <GridPane layoutX="707.0" layoutY="30.0" prefHeight="413.0" prefWidth="620.0" styleClass="signInDialog" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="30.0">
+              <fx:script>
+				function handleSignInBtn(){
+					loginTitle.setText("感谢注册葱花购物商城");            
+				}
+              </fx:script>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fx:id="loginTitle" fill="#d02020" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="欢迎注册葱花购物商城" GridPane.columnSpan="2">
+                     <font>
+                        <Font name="Microsoft JhengHei Bold" size="29.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Label text="手机号注册：" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="220.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Microsoft JhengHei" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="密码：" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Microsoft JhengHei" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="260.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="loginField" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="30.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets right="30.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <HBox prefHeight="103.0" prefWidth="332.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="signInBtn" mnemonicParsing="false" onAction="handleSignInBtn(event)" prefHeight="40.0" prefWidth="200.0" styleClass="signInBtn" text="注册" textFill="#fbfff3">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft JhengHei" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Hyperlink prefHeight="65.0" prefWidth="168.0" text="已经有账号？点此登陆" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ImageView fitHeight="58.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="25.0" left="180.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@../../img/signIn5.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="143.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                     <image>
+                        <Image url="@../../img/logo2.gif" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <ImageView fitHeight="383.0" fitWidth="504.0" layoutX="59.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/signIn1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="536.0" layoutY="730.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/footerLogo1.PNG" />
+         </image>
+      </ImageView>
+      <Text fill="#999999" layoutX="562.0" layoutY="745.0" strokeType="OUTSIDE" strokeWidth="0.0" text="粤公网安备 66666666号 ">
+         <font>
+            <Font name="Microsoft YaHei" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#999999" layoutX="697.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花公司版权所有@-200-2018" />
+      <Hyperlink layoutX="574.0" layoutY="698.0" text="客服支持" />
+      <Hyperlink layoutX="676.0" layoutY="698.0" text="联系我们" />
+      <Hyperlink layoutX="768.0" layoutY="698.0" text="关于我们" />
+      <ImageView fitHeight="82.0" fitWidth="99.0" layoutX="440.0" layoutY="678.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/logo3.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="99.0" layoutX="882.0" layoutY="678.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/logo3.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

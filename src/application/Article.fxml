@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@article.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-7.0" prefHeight="120.0" prefWidth="1366.0" styleClass="indexTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#e31436" layoutX="206.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花购物商城" wrappingWidth="181.240234375">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="29.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="107.0" fitWidth="119.0" layoutX="75.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/logo.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="1103.0" layoutY="40.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" styleClass="indexCartBtn" text="购物车" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei" size="20.0" />
+               </font>
+            </Button>
+            <TextField layoutX="683.0" layoutY="42.0" prefHeight="34.0" prefWidth="229.0" promptText="在上亿商品中搜索">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </TextField>
+            <Button layoutX="912.0" layoutY="42.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="68.0" styleClass="indexSearchBtn" text="搜索" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="670.0" layoutY="91.0" text="前男友面膜" textFill="#e31436" />
+            <Label layoutX="742.0" layoutY="91.0" text="杰士邦零感" textFill="#999999" />
+            <Label layoutX="814.0" layoutY="91.0" text="python从入门到放弃" textFill="#999999" />
+            <ImageView fitHeight="120.0" fitWidth="673.0" layoutX="387.0" layoutY="1.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/index2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutY="115.0" prefHeight="654.0" prefWidth="1366.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="640.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Line endX="1266.0" layoutX="101.0" layoutY="50.0" opacity="0.57" startX="-100.0" />
+                  <HBox layoutX="177.0" layoutY="8.0">
+                     <children>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="首页">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="热销商品">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="每日团购">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="旧彩电">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="护肤用品">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="洗护用品">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="土特产">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="地摊货">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <AnchorPane layoutX="1.0" layoutY="50.0" prefHeight="580.0" prefWidth="1366.0">
+                     <children>
+                        <ImageView fitHeight="354.0" fitWidth="352.0" layoutX="141.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../articleImg/productImg.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="578.0" layoutY="56.0" text="MUJI 高靠背可伸缩沙发/１座/聚酯纤维平纹">
+                           <font>
+                              <Font name="Microsoft YaHei Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="578.0" layoutY="95.0" text="腰部的斜靠功能可用拉杆简单操作" textFill="#999999" />
+                        <AnchorPane layoutX="578.0" layoutY="129.0" opacity="0.78" prefHeight="100.0" prefWidth="500.0" style="-fx-background-color: #eee;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="价格" textFill="#999999">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="41.0" text="促销价" textFill="#e31416">
+                                 <font>
+                                    <Font name="Microsoft YaHei" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="67.0" text="活动" textFill="#e31416">
+                                 <font>
+                                    <Font name="Microsoft YaHei Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#999999" layoutX="97.0" layoutY="27.0" strikethrough="true" strokeType="OUTSIDE" strokeWidth="0.0" text="￥2700.00" />
+                              <Label layoutX="97.0" layoutY="38.0" text="¥ 2430.00" textFill="#e31416">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="97.0" layoutY="69.0" text="没有包邮滚" textFill="#b5621b" />
+                              <Label layoutX="194.0" layoutY="41.0" style="-fx-background-color: #f47a86;" text="优惠促销" textFill="WHITE">
+                                 <font>
+                                    <Font name="Microsoft Tai Le" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="69.0" text="更多优惠" textFill="#b5621b" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="585.0" layoutY="250.0" text="运费" textFill="#999999" />
+                        <Label layoutX="634.0" layoutY="250.0" text="广州从化  至" textFill="#555555" />
+                        <Label layoutX="755.0" layoutY="250.0" text="运费 : " textFill="#aaaaaa" />
+                        <Label layoutX="709.0" layoutY="250.0" text="魔都" textFill="#555555" />
+                        <Label layoutX="789.0" layoutY="250.0" text="￥30.00" textFill="#aaaaaa" />
+                        <Label layoutX="585.0" layoutY="283.0" text="服务" textFill="#999999" />
+                        <Text fill="#666666" layoutX="629.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="本商品由 葱花亚洲仓库 发货  预计2-3个工作日到达" wrappingWidth="160.0" />
+                        <Label layoutX="582.0" layoutY="336.0" text=" 数量" textFill="#999999" />
+                        <TextField layoutX="656.0" layoutY="332.0" prefHeight="23.0" prefWidth="32.0" />
+                        <Button layoutX="686.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="15.0" style="-fx-background-color: #fff; -fx-border-color: #ccc;" text="+" />
+                        <Button layoutX="634.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" style="-fx-background-color: #fff; -fx-border-color: #ccc;" text="-" />
+                        <Label layoutX="585.0" layoutY="378.0" text="说明" textFill="#999999" />
+                        <Text fill="#aaaaaa" layoutX="631.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="不可7天无理由退款    无保修服务" wrappingWidth="254.240234375" />
+                        <Button layoutX="583.0" layoutY="418.0" mnemonicParsing="false" text="加入购物车">
+                           <font>
+                              <Font name="Microsoft YaHei" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

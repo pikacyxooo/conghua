@@ -1,0 +1,28 @@
+.indexRoot,
+.indexTitle{
+	-fx-background-color:#fff;
+}
+.indexCartBtn,
+.indexSearchBtn{
+	-fx-background-color:#e31436;
+}
+.indexCartBtn:hover,
+.indexSearchBtn:hover{
+	-fx-background-color:#ad0c27;
+}
+.articleNavBtn{
+	-fx-background-color:#fff;
+	-fx-border-style:none;
+}
+.articleNavBtn:hover{
+	-fx-text-fill:#fff;
+	-fx-background-color:#000;
+}
+.productAddCartBtn{
+	-fx-background-color: #f47a86;
+	-fx-border-color:#e31416;
+}
+.productPurchaseBtn{
+	-fx-background-color:#e31416;
+	-fx-text-fill:#fff;
+}

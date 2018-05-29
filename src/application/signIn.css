@@ -1,0 +1,18 @@
+.root{
+	-fx-background-color:#fff;
+}
+.appTitle{
+	-fx-background-color:#000;	
+}
+.signMain{
+	-fx-background-color:#f8f8f8;
+}
+.signInDialog{
+	-fx-background-color:#fff;
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 2, 0.0 , 0 , 1 );
+}
+.signInBtn,
+.signInsearchBtn{
+	-fx-background-color:#e31436;
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 2, 0.0 , 0 , 1 );
+}
