@@ -43,7 +43,7 @@ public class Main extends Application {
 	public void showIndexLayout() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("IndexBackup.fxml"));
+			loader.setLocation(getClass().getResource("Index.fxml"));
 			AnchorPane indexLayout = (AnchorPane)loader.load();
 			
 			rootLayout.setCenter(indexLayout);;

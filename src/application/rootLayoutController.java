@@ -14,7 +14,7 @@ public class rootLayoutController {
 		System.out.println("I was clicked");
 		try {
 			 FXMLLoader loader = new FXMLLoader();
-			 loader.setLocation(getClass().getResource("SignIn.fxml"));
+			 loader.setLocation(getClass().getResource("product.fxml"));
 			 AnchorPane signInLayout = (AnchorPane)loader.load();
 			 Scene scene = new Scene(signInLayout);
 			 System.out.println(Main.rootLayout);

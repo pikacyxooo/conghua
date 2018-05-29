@@ -11,15 +11,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane styleClass=".indexRoot" stylesheets="@index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="638.0" maxWidth="1266.0" styleClass=".indexRoot" stylesheets="@index.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="1366.0" styleClass="indexTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="120.0" maxWidth="1266.0" prefHeight="120.0" prefWidth="1266.0" styleClass="indexTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Text fill="#e31436" layoutX="206.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花购物商城" wrappingWidth="181.240234375">
                <font>
@@ -56,55 +57,59 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="-4.0" layoutY="130.0" prefHeight="648.0" vvalue="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="-4.0" layoutY="130.0" maxHeight="518.0" vvalue="0.44" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <content>
-            <AnchorPane prefHeight="2500.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
+            <AnchorPane style="-fx-background-color: #fff;">
                <children>
-                  <AnchorPane layoutY="7.0" prefHeight="4500.0" prefWidth="1366.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <AnchorPane layoutY="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="1266.0" style="-fx-background-color: #fff;">
                            <children>
                               <Line endX="1266.0" layoutX="101.0" layoutY="50.0" opacity="0.57" startX="-100.0" />
-                              <Button layoutX="684.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="首页">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="740.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="热销商品">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="828.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="每日团购">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="916.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="旧彩电">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="988.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="护肤用品">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="1076.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="洗护用品">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="1164.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="土特产">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="1236.0" layoutY="10.0" mnemonicParsing="false" styleClass="indexNavBtn" text="地摊货">
-                                 <font>
-                                    <Font name="Microsoft YaHei" size="16.0" />
-                                 </font>
-                              </Button>
+                              <HBox layoutX="439.0" layoutY="8.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="首页">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="热销商品">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="每日团购">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="旧彩电">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="护肤用品">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="洗护用品">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="土特产">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" styleClass="indexNavBtn" text="地摊货">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="16.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
                            </children>
                         </AnchorPane>
                         <Hyperlink layoutX="89.0" layoutY="15.0" text="从化地沟油批发" />
@@ -117,9 +122,9 @@
                            </font>
                         </Label>
                         <Line endX="100.0" layoutX="282.0" layoutY="734.0" opacity="0.49" startX="-90.0" />
-                        <AnchorPane id="promptContent" layoutX="35.0" layoutY="766.0" prefHeight="200.0" prefWidth="1246.0">
+                        <AnchorPane id="promptContent" layoutX="35.0" layoutY="766.0" prefHeight="200.0" prefWidth="1246.0" AnchorPane.leftAnchor="19.666666666666742" AnchorPane.rightAnchor="0.33333333333325754">
                            <children>
-                              <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="194.0" prefWidth="263.0" style="-fx-background-color: #eee;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="194.0" prefWidth="263.0" style="-fx-background-color: #eee;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
                                  <children>
                                     <Label layoutX="51.0" layoutY="45.0" prefHeight="41.0" prefWidth="191.0" text="葱花大热门" textAlignment="CENTER" textFill="#e31436" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="21.0">
                                        <font>
@@ -234,18 +239,18 @@
                               <Font name="Microsoft YaHei" size="20.0" />
                            </font>
                         </Label>
-                        <AnchorPane layoutX="1.0" layoutY="1009.0" opacity="0.88" prefHeight="40.0" prefWidth="1366.0" style="-fx-background-color: #e31436;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <AnchorPane layoutY="1015.0" maxHeight="768.0" maxWidth="1366.0" opacity="0.88" style="-fx-background-color: #e31436;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
-                              <Label layoutX="640.0" layoutY="6.0" text="吃货专区" textFill="WHITE" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="640.0">
+                              <Label layoutX="578.0" layoutY="6.0" prefHeight="28.0" prefWidth="92.0" text="吃货专区" textFill="WHITE" AnchorPane.leftAnchor="578.0" AnchorPane.rightAnchor="596.0">
                                  <font>
                                     <Font name="Microsoft YaHei" size="21.0" />
                                  </font>
                               </Label>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutY="1049.0" opacity="0.85" prefHeight="850.0" prefWidth="1366.0" style="-fx-background-color: #e31634#dd3e3e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <AnchorPane layoutY="1049.0" opacity="0.85" prefHeight="850.0" prefWidth="1166.0" style="-fx-background-color: #e31634#dd3e3e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
-                              <GridPane layoutX="173.0" layoutY="77.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+                              <GridPane layoutX="147.0" layoutY="77.0" prefHeight="309.0" prefWidth="956.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="178.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -259,20 +264,20 @@
                                     <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexFoodPane" GridPane.rowSpan="4">
+                                    <Pane prefHeight="310.0" prefWidth="257.0" styleClass="indexFoodPane" GridPane.rowSpan="4">
                                        <children>
                                           <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../../indexImg/indexFood1.jpg" />
                                              </image>
                                           </ImageView>
-                                          <Button layoutX="115.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                          <Button layoutX="118.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
                                           </Button>
                                           <Label layoutX="4.0" layoutY="209.0" prefHeight="15.0" prefWidth="239.0" text="【三只松鼠_夏威夷果265gx2袋】零食坚果干果奶油味送开口器" textFill="#999999" />
-                                          <Label layoutX="27.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -298,7 +303,7 @@
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
                                           </Button>
-                                          <Label layoutX="25.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -316,12 +321,12 @@
                                                 <Font name="Microsoft YaHei" size="12.0" />
                                              </font>
                                           </Label>
-                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                          <Button layoutX="120.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
                                           </Button>
-                                          <Label layoutX="31.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 46.90" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -352,7 +357,7 @@
                                        </children></Pane>
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="120.0" layoutY="451.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="451.0">
+                              <GridPane layoutX="150.0" layoutY="451.0" prefHeight="309.0" prefWidth="954.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="177.0" AnchorPane.topAnchor="451.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -374,12 +379,12 @@
                                              </image>
                                           </ImageView>
                                           <Label layoutX="2.0" layoutY="218.0" prefHeight="15.0" prefWidth="239.0" text="绿箭口香糖100片箭牌原味薄荷味批发休闲网红零食品大礼包" textFill="#999999" />
-                                          <Label layoutX="31.0" layoutY="259.0" text="¥ 19.90 " textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="259.0" text="¥ 19.90 " textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
                                           </Label>
-                                          <Button layoutX="121.0" layoutY="249.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                          <Button layoutX="122.0" layoutY="249.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
@@ -393,7 +398,7 @@
                                              </image>
                                           </ImageView>
                                           <Label layoutX="2.0" layoutY="217.0" prefHeight="15.0" prefWidth="239.0" text="乐事薯片40g*10送女友整箱零食大礼包批发包邮好吃的膨化小吃组合" textFill="#999999" />
-                                          <Label layoutX="31.0" layoutY="260.0" text="¥ 29.80" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="260.0" text="¥ 29.80" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -412,7 +417,7 @@
                                              </image>
                                           </ImageView>
                                           <Label layoutX="2.0" layoutY="215.0" prefHeight="15.0" prefWidth="239.0" text="无穷食品旗舰店烤小鸡腿20只蜂蜜香辣味肉类零食小吃整箱批发熟食" textFill="#999999" />
-                                          <Label layoutX="31.0" layoutY="256.0" text="¥ 48.80" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="256.0" text="¥ 48.80" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -431,7 +436,7 @@
                                              </image>
                                           </ImageView>
                                           <Label layoutX="1.0" layoutY="216.0" prefHeight="15.0" prefWidth="239.0" text="德芙牛奶巧克力3碗装混合口味送女友零食大礼盒装喜糖果批发包邮" textFill="#999999" />
-                                          <Label layoutX="30.0" layoutY="256.0" text="¥ 98.90" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="256.0" text="¥ 98.90" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -445,14 +450,14 @@
                                  </children>
                               </GridPane>
                            </children></AnchorPane>
-                        <AnchorPane layoutX="2.0" layoutY="1939.0" opacity="0.85" prefHeight="850.0" prefWidth="1366.0" style="-fx-background-color: #00B262;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <AnchorPane layoutX="2.0" layoutY="1939.0" opacity="0.85" prefHeight="850.0" prefWidth="1166.0" style="-fx-background-color: #00B262;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
-                              <GridPane layoutX="206.0" layoutY="73.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+                              <GridPane layoutX="136.0" layoutY="73.0" prefHeight="309.0" prefWidth="1001.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="162.0">
                                  <columnConstraints>
-                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.33331298828125" minWidth="10.0" prefWidth="240.33331298828125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0000203450521" minWidth="10.0" prefWidth="244.0000203450521" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.33333333333331" minWidth="10.0" prefWidth="252.33333333333331" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.3333740234375" minWidth="10.0" prefWidth="246.33333333333337" />
                                  </columnConstraints>
                                  <rowConstraints>
                                     <RowConstraints maxHeight="95.0" minHeight="-Infinity" prefHeight="74.0" vgrow="SOMETIMES" />
@@ -461,7 +466,7 @@
                                     <RowConstraints maxHeight="70.0" minHeight="49.0" prefHeight="70.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.rowSpan="4">
+                                    <Pane prefHeight="309.0" prefWidth="270.0" styleClass="indexWishPane" GridPane.rowSpan="4">
                                        <children>
                                           <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -469,7 +474,7 @@
                                              </image>
                                           </ImageView>
                                           <Label layoutX="2.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="施巴sebamed德国进口去屑洗发露200控油止痒无硅油洗发水温和洗护" textFill="#999999" />
-                                          <Label layoutX="21.0" layoutY="256.0" text="¥ 74.00" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="256.0" text="¥ 74.00" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -480,7 +485,7 @@
                                              </font>
                                           </Button>
                                        </children></Pane>
-                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                    <Pane prefHeight="309.0" prefWidth="270.0" styleClass="indexWishPane" GridPane.columnIndex="1" GridPane.rowSpan="4">
                                        <children>
                                           <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -493,13 +498,13 @@
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
                                           </Button>
-                                          <Label layoutX="31.0" layoutY="258.0" text="¥ 67.20 " textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 67.20 " textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
                                           </Label>
                                        </children></Pane>
-                                    <Pane prefHeight="200.0" prefWidth="200.0" styleClass="indexWishPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
+                                    <Pane prefHeight="200.0" prefWidth="270.0" styleClass="indexWishPane" GridPane.columnIndex="2" GridPane.rowSpan="4">
                                        <children>
                                           <ImageView fitHeight="181.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -507,12 +512,12 @@
                                              </image>
                                           </ImageView>
                                           <Label layoutX="1.0" layoutY="222.0" prefHeight="15.0" prefWidth="239.0" text="日本进口Dove多芬空气保湿无硅油洗发水护发素套装480g*2补水保湿" textFill="#999999" />
-                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                          <Button layoutX="127.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
                                           </Button>
-                                          <Label layoutX="30.0" layoutY="258.0" text="¥ 129.00" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 129.00" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -531,7 +536,7 @@
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
                                           </Button>
-                                          <Label layoutX="27.0" layoutY="258.0" text="¥ 68.00" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="258.0" text="¥ 68.00" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -539,7 +544,7 @@
                                        </children></Pane>
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="120.0" layoutY="442.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+                              <GridPane layoutX="136.0" layoutY="442.0" prefHeight="309.0" prefWidth="1001.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="162.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -585,7 +590,7 @@
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
                                           </Label>
-                                          <Button layoutX="121.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
+                                          <Button layoutX="123.0" layoutY="248.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="113.0" styleClass="indexFoodBtn" text="立即购买" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="16.0" />
                                              </font>
@@ -599,7 +604,7 @@
                                              </image>
                                           </ImageView>
                                           <Label layoutX="1.0" layoutY="220.0" prefHeight="15.0" prefWidth="239.0" text="韩国进口LG睿嫣润膏无硅油洗护合一洗发水250ml*4瓶" textFill="#999999" />
-                                          <Label layoutX="20.0" layoutY="259.0" text="¥ 109.00" textFill="#e31436">
+                                          <Label layoutX="14.0" layoutY="259.0" text="¥ 109.00" textFill="#e31436">
                                              <font>
                                                 <Font name="Microsoft YaHei Bold" size="20.0" />
                                              </font>
@@ -633,7 +638,7 @@
                               </GridPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="1.0" layoutY="2789.0" opacity="0.85" prefHeight="40.0" prefWidth="1366.0" style="-fx-background-color: #7a45e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <AnchorPane layoutX="1.0" layoutY="2789.0" opacity="0.85" prefHeight="40.0" prefWidth="1166.0" style="-fx-background-color: #7a45e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
                               <Label layoutX="652.0" layoutY="7.0" text="数码馆" textFill="WHITE">
                                  <font>
@@ -641,23 +646,18 @@
                                  </font>
                               </Label>
                            </children></AnchorPane>
-                        <AnchorPane layoutX="1.0" layoutY="1899.0" opacity="0.85" prefHeight="40.0" prefWidth="1366.0" style="-fx-background-color: #00B262;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <AnchorPane layoutX="1.0" layoutY="1899.0" opacity="0.85" prefHeight="40.0" prefWidth="1166.0" style="-fx-background-color: #00B262;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
-                              <Label layoutX="642.0" layoutY="6.0" text="洗护用品" textFill="WHITE" AnchorPane.leftAnchor="642.0" AnchorPane.rightAnchor="641.0">
+                              <Label layoutX="583.0" layoutY="6.0" prefHeight="28.0" prefWidth="107.0" text="洗护用品" textFill="WHITE" AnchorPane.leftAnchor="583.0" AnchorPane.rightAnchor="591.0">
                                  <font>
                                     <Font name="Microsoft YaHei" size="21.0" />
                                  </font>
                               </Label>
-                              <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="587.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../img/logo3.gif" />
-                                 </image>
-                              </ImageView>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="2.0" layoutY="2829.0" opacity="0.85" prefHeight="850.0" prefWidth="1366.0" style="-fx-background-color: #7a45e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <AnchorPane layoutX="2.0" layoutY="2829.0" opacity="0.85" prefHeight="850.0" prefWidth="1166.0" style="-fx-background-color: #7a45e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
-                              <GridPane layoutX="175.0" layoutY="82.0" prefHeight="309.0" prefWidth="1017.0">
+                              <GridPane layoutX="175.0" layoutY="82.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="110.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -753,7 +753,7 @@
                                     </Pane>
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="175.0" layoutY="438.0" prefHeight="309.0" prefWidth="1017.0">
+                              <GridPane layoutX="175.0" layoutY="438.0" prefHeight="309.0" prefWidth="1017.0" AnchorPane.leftAnchor="110.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -960,7 +960,7 @@
                                  </children></Pane>
                            </children>
                         </GridPane>
-                        <AnchorPane layoutX="1.0" layoutY="4393.0" prefHeight="107.0" prefWidth="1353.0" style="-fx-background-color: #eee;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <AnchorPane layoutX="14.0" layoutY="4343.0" prefHeight="100.0" prefWidth="1166.0" style="-fx-background-color: #eee;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="4343.0">
                            <children>
                               <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="475.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -988,9 +988,9 @@
                               <Hyperlink layoutX="733.0" layoutY="29.0" text="客服支持" />
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutY="4278.0" prefHeight="120.0" prefWidth="1366.0" style="-fx-background-color: #fff;" styleClass="indexBottom">
+                        <AnchorPane layoutX="14.0" layoutY="4243.0" maxWidth="1366.0" style="-fx-background-color: #fff;" styleClass="indexBottom">
                            <children>
-                              <ImageView fitHeight="120.0" fitWidth="1291.0" layoutX="170.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="91.8209228515625">
+                              <ImageView fitHeight="100.0" fitWidth="1366.0" layoutX="169.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="92.8209228515625">
                                  <image>
                                     <Image url="@../../indexImg/indexBottom.PNG" />
                                  </image>
@@ -999,7 +999,7 @@
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-                  <AnchorPane id="promptContent" layoutX="93.0" layoutY="492.0" prefHeight="200.0" prefWidth="1246.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                  <AnchorPane id="promptContent" layoutX="93.0" layoutY="492.0" prefHeight="200.0" prefWidth="1166.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
                      <children>
                         <AnchorPane prefHeight="200.0" prefWidth="263.0" style="-fx-background-color: #e31436;">
                            <children>
