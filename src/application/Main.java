@@ -2,10 +2,8 @@ package application;
 	
 import java.io.IOException;
 
-import com.sun.javafx.robot.impl.FXRobotHelper;
-
 import javafx.application.Application;
-import javafx.collections.ObservableList;
+
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -33,6 +31,7 @@ public class Main extends Application {
 		try {		
 			Scene scene = new Scene(rootLayout);
 			stage.setScene(scene);
+			stage.setResizable(false);
 			stage.show();
 		}catch(Exception e) {
 			e.printStackTrace();

@@ -1,0 +1,12 @@
+.indexRoot,
+.indexTitle{
+	-fx-background-color:#fff;
+}
+.indexCartBtn,
+.indexSearchBtn{
+	-fx-background-color:#e31436;
+}
+.indexCartBtn:hover,
+.indexSearchBtn:hover{
+	-fx-background-color:#ad0c27;
+}

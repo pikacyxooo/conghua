@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
@@ -18,9 +19,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="738.0" prefWidth="1366.0" stylesheets="@article.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="638.0" maxWidth="1266.0" prefHeight="638.0" prefWidth="1266.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutY="-7.0" prefHeight="120.0" prefWidth="1366.0" styleClass="indexTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutY="-7.0" maxHeight="120.0" maxWidth="1266.0" prefHeight="120.0" prefWidth="1266.0" styleClass="indexTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Text fill="#e31436" layoutX="206.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花购物商城" wrappingWidth="181.240234375">
                <font>
@@ -32,7 +33,7 @@
                   <Image url="@../../img/logo.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="1103.0" layoutY="40.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" styleClass="indexCartBtn" text="购物车" textFill="WHITE">
+            <Button fx:id="handleCartPageClick" layoutX="1103.0" layoutY="40.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" styleClass="indexCartBtn" text="购物车" textFill="WHITE">
                <font>
                   <Font name="Microsoft YaHei" size="20.0" />
                </font>
@@ -57,68 +58,68 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <ScrollPane layoutY="115.0" prefHeight="618.0" prefWidth="1366.0" style="-fx-background-color: #fff;" vvalue="0.23" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+      <ScrollPane layoutY="115.0" maxHeight="518.0" maxWidth="1266.0" prefHeight="518.0" prefWidth="1266.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3550.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
                <children>
                   <Line endX="1266.0" layoutX="101.0" layoutY="50.0" opacity="0.57" startX="-100.0" />
                   <HBox layoutX="177.0" layoutY="8.0">
                      <children>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="首页">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="首页">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="热销商品">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="热销商品">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="每日团购">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="每日团购">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="旧彩电">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="旧彩电">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="护肤用品">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="护肤用品">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="洗护用品">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="洗护用品">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="土特产">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="土特产">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="articleNavBtn" text="地摊货">
+                        <Button mnemonicParsing="false" styleClass="productNavBtn" text="地摊货">
                            <font>
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
                      </children>
                   </HBox>
-                  <AnchorPane layoutX="1.0" layoutY="50.0" prefHeight="580.0" prefWidth="1366.0" style="-fx-border-color: #aaa;">
+                  <AnchorPane layoutX="1.0" layoutY="50.0" prefHeight="580.0" prefWidth="1366.0" style="-fx-border-color: #aaa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
                         <ImageView fitHeight="354.0" fitWidth="352.0" layoutX="141.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../articleImg/productImg.jpg" />
                            </image>
                         </ImageView>
-                        <Label layoutX="578.0" layoutY="56.0" text="MUJI 高靠背可伸缩沙发/１座/聚酯纤维平纹">
+                        <Label fx:id="productTitle" layoutX="578.0" layoutY="56.0" text="MUJI 高靠背可伸缩沙发/１座/聚酯纤维平纹">
                            <font>
                               <Font name="Microsoft YaHei Bold" size="22.0" />
                            </font>
                         </Label>
-                        <Label layoutX="578.0" layoutY="95.0" text="腰部的斜靠功能可用拉杆简单操作" textFill="#999999" />
+                        <Label fx:id="productDesc" layoutX="578.0" layoutY="95.0" text="腰部的斜靠功能可用拉杆简单操作" textFill="#999999" />
                         <AnchorPane layoutX="578.0" layoutY="129.0" opacity="0.78" prefHeight="100.0" prefWidth="500.0" style="-fx-background-color: #eee;">
                            <children>
                               <Label layoutX="14.0" layoutY="14.0" text="价格" textFill="#999999">
@@ -136,8 +137,8 @@
                                     <Font name="Microsoft YaHei Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Text fill="#999999" layoutX="97.0" layoutY="27.0" strikethrough="true" strokeType="OUTSIDE" strokeWidth="0.0" text="￥2700.00" />
-                              <Label layoutX="97.0" layoutY="38.0" text="¥ 2430.00" textFill="#e31416">
+                              <Text fx:id="normalPrice" fill="#999999" layoutX="97.0" layoutY="27.0" strikethrough="true" strokeType="OUTSIDE" strokeWidth="0.0" text="￥2700.00" />
+                              <Label fx:id="discountPrice" layoutX="97.0" layoutY="38.0" text="¥ 2430.00" textFill="#e31416">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
@@ -159,9 +160,9 @@
                         <Label layoutX="585.0" layoutY="283.0" text="服务" textFill="#999999" />
                         <Text fill="#555555" layoutX="629.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="本商品由 葱花亚洲仓库 发货  预计2-3个工作日到达" wrappingWidth="160.0" />
                         <Label layoutX="585.0" layoutY="345.0" text="数量" textFill="#999999" />
-                        <Button layoutX="629.0" layoutY="341.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="25.0" style="-fx-background-color: #fff; -fx-border-color: #ccc;" text="-" />
-                        <TextField layoutX="653.0" layoutY="342.0" prefHeight="23.0" prefWidth="27.0" />
-                        <Button layoutX="680.0" layoutY="341.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="25.0" style="-fx-background-color: #fff; -fx-border-color: #ccc;" text="+" />
+                        <Button fx:id="handleMinus" layoutX="629.0" layoutY="341.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="25.0" style="-fx-background-color: #fff; -fx-border-color: #ccc;" text="-" />
+                        <TextField fx:id="numberField" layoutX="653.0" layoutY="342.0" prefHeight="23.0" prefWidth="27.0" />
+                        <Button fx:id="handlePlus" layoutX="680.0" layoutY="341.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="25.0" style="-fx-background-color: #fff; -fx-border-color: #ccc;" text="+" />
                         <Label layoutX="585.0" layoutY="386.0" text="说明" textFill="#999999" />
                         <Text fill="#aaaaaa" layoutX="623.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="不可7天无理由退款   无保修服务" wrappingWidth="240.240234375" />
                         <Button layoutX="621.0" layoutY="417.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="145.0" styleClass="productAddCartBtn" text="加入购物车" textFill="WHITE">
@@ -175,7 +176,7 @@
                            </font>
                         </Button>
                         <Label layoutX="731.0" layoutY="345.0" text="库存" textFill="#aaaaaa" />
-                        <Text fill="#aaaaaa" layoutX="758.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000" />
+                        <Text fx:id="stock" fill="#aaaaaa" layoutX="758.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000" />
                         <Label layoutX="791.0" layoutY="346.0" text="件" textFill="#aaaaaa">
                            <padding>
                               <Insets left="5.0" />
@@ -238,7 +239,7 @@
                            <font>
                               <Font name="Microsoft YaHei" size="12.0" />
                            </font></Label>
-                        <Text fill="#999999" layoutX="445.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 4547315084203" wrappingWidth="236.767578125" />
+                        <Text fx:id="productId" fill="#999999" layoutX="445.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 4547315084203" wrappingWidth="236.767578125" />
                         <Label layoutX="393.0" layoutY="115.0" prefHeight="15.0" prefWidth="53.0" text="适用对象" textFill="#555555" />
                         <Text fill="#999999" layoutX="446.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="成人" wrappingWidth="236.767578125" />
                         <Label layoutX="54.0" layoutY="187.0" text="MUJI 高靠背可伸缩沙发/１座/聚酯纤维平纹">
@@ -282,7 +283,7 @@
                               <Image url="@../../articleImg/productUseInfoImg.jpg" />
                            </image>
                         </ImageView>
-                        <Text fill="#999999" layoutX="54.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="腰部的斜靠功能可用拉杆简单操作" />
+                        <Text fx:id="productDetailDesc" fill="#999999" layoutX="54.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="腰部的斜靠功能可用拉杆简单操作" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="1.0" layoutY="3298.0" prefHeight="150.0" prefWidth="1366.0" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
@@ -327,4 +328,8 @@
         </content>
       </ScrollPane>
    </children>
+   <stylesheets>
+      <URL value="@topbar.css" />
+      <URL value="@product.css" />
+   </stylesheets>
 </AnchorPane>

@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -70,7 +71,7 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Text fx:id="loginTitle" fill="#d02020" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="欢迎注册葱花购物商城" GridPane.columnSpan="2">
+                  <Text fx:id="loginTitle" fill="#d02020" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="欢迎登录葱花购物商城" GridPane.columnSpan="2">
                      <font>
                         <Font name="Microsoft JhengHei Bold" size="29.0" />
                      </font>
@@ -78,7 +79,7 @@
                         <Insets left="100.0" />
                      </GridPane.margin>
                   </Text>
-                  <Label text="手机号注册：" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Label text="手机号登录：" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets left="220.0" />
                      </GridPane.margin>
@@ -94,18 +95,13 @@
                         <Insets left="260.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="loginField" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <GridPane.margin>
-                        <Insets right="30.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <TextField prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                  <TextField fx:id="signInField" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets right="30.0" />
                      </GridPane.margin>
                   </TextField>
                   <HBox prefHeight="103.0" prefWidth="332.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <Hyperlink prefHeight="65.0" prefWidth="168.0" text="已经有账号？点此登陆" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <Hyperlink prefHeight="65.0" prefWidth="168.0" text="还未注册账号?点此注册" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets top="20.0" />
                      </GridPane.margin>
@@ -118,7 +114,7 @@
                         <Insets left="50.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <Button fx:id="signInBtn" mnemonicParsing="false" onAction="handleSignInBtn(event)" prefHeight="40.0" prefWidth="200.0" styleClass="signInBtn" text="注册" textFill="#fbfff3" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <Button fx:id="signInBtn" mnemonicParsing="false" onAction="handleSignInBtn(event)" prefHeight="40.0" prefWidth="200.0" styleClass="signInBtn" text="登录" textFill="#fbfff3" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <font>
                         <Font name="Microsoft JhengHei" size="18.0" />
                      </font>
@@ -131,6 +127,11 @@
                         <Insets left="150.0" />
                      </GridPane.margin>
                   </ImageView>
+                  <PasswordField fx:id="passwordField" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" right="30.0" />
+                     </GridPane.margin>
+                  </PasswordField>
                </children>
             </GridPane>
             <ImageView fitHeight="383.0" fitWidth="504.0" layoutX="58.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">

@@ -8,8 +8,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 
-public class signInController {
-	@FXML private Button signInBtn;  //登陆按钮
-	@FXML private TextField signInField;  //输入手机号文本域
+public class signUpController {
+	@FXML private Button signUpBtn;  //注册按钮
+	@FXML private TextField signUpField;  //输入手机号文本域
 	@FXML private PasswordField passwordField;  //输入密码文本域
 }

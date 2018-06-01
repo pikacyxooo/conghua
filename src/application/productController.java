@@ -4,7 +4,9 @@ import java.awt.Label;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 
 public class productController {
@@ -29,5 +31,15 @@ public class productController {
 		num--;
 		productNum = Integer.toString(num);
 		numberField.setText(productNum);
+	}
+	@FXML protected void handleCartPageClick(ActionEvent event) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(getClass().getResource("Cart.fxml"));
+			AnchorPane signUpLayout = (AnchorPane)loader.load();
+			Main.rootLayout.setCenter(signUpLayout);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
