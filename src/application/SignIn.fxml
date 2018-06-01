@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="668.0" prefWidth="1166.0" stylesheets="@signIn.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="668.0" prefWidth="1166.0" stylesheets="@signIn.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane layoutX="60.0" layoutY="28.0" prefHeight="160.0" prefWidth="1248.0" styleClass="signInTop" AnchorPane.bottomAnchor="608.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -140,7 +140,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="680.0" prefHeight="100.0" prefWidth="424.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="560.0">
+      <AnchorPane layoutY="540.0" prefHeight="100.0" prefWidth="424.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="540.0">
          <children>
             <ImageView fitHeight="82.0" fitWidth="99.0" layoutX="794.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -25,8 +25,8 @@ public class Main extends Application {
 		rootLayout = (BorderPane)loader.load();
 		System.out.println(stage);
 		initRootLayout();
-//		showSignInLayout();
-		showIndexLayout();
+		showSignInLayout();
+//		showIndexLayout();
 	}
 	
 	public void initRootLayout() {

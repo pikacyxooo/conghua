@@ -6,21 +6,21 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="668.0" maxWidth="1366.0" prefHeight="668.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rootLayoutController">
+<BorderPane maxHeight="668.0" maxWidth="1366.0" prefHeight="668.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rootLayoutController">
    <top>
       <AnchorPane maxHeight="30.0" prefHeight="30.0" prefWidth="1366.0" styleClass="appTitle" stylesheets="@main.css" BorderPane.alignment="CENTER">
          <children>
-            <Hyperlink layoutX="241.0" layoutY="8.0" onAction="#handleSignInLinkClick" styleClass="appTitleText" text="请登录">
+            <Hyperlink layoutX="241.0" layoutY="8.0" onAction="#handleSignUpPageClick" styleClass="appTitleText" text="请登录">
                <font>
                   <Font name="Microsoft YaHei" size="12.0" />
                </font>
             </Hyperlink>
-            <Hyperlink layoutX="91.0" layoutY="8.0" styleClass="appTitleText" text="葱花欢迎你">
+            <Hyperlink layoutX="91.0" layoutY="8.0" onAction="#handleIndexPageClick" styleClass="appTitleText" text="葱花欢迎你">
                <font>
                   <Font name="Microsoft YaHei Bold" size="13.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="signInLink" layoutX="295.0" layoutY="9.0" onAction="#handleSignInLinkClick" onMouseClicked="#handleSignInLinkClick" styleClass="appTitleText" text="还未注册？点这里" />
+            <Hyperlink fx:id="signInLink" layoutX="295.0" layoutY="9.0" onAction="#handleSignInPageClick" onMouseClicked="#handleSignInPageClick" styleClass="appTitleText" text="还未注册？点这里" />
             <Hyperlink layoutX="971.0" layoutY="8.0" styleClass="appTitleText" text="我的订单" />
             <Hyperlink layoutX="1045.0" layoutY="9.0" styleClass="appTitleText" text="个人中心" />
             <Hyperlink layoutX="1123.0" layoutY="8.0" styleClass="appTitleText" text="客户服务" />

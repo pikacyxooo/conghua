@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="738.0" prefWidth="1366.0" stylesheets="@article.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="738.0" prefWidth="1366.0" stylesheets="@article.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane layoutY="-7.0" prefHeight="120.0" prefWidth="1366.0" styleClass="indexTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -57,9 +57,9 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <ScrollPane layoutY="115.0" prefHeight="618.0" prefWidth="1366.0" style="-fx-background-color: #fff;" vvalue="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+      <ScrollPane layoutY="115.0" prefHeight="618.0" prefWidth="1366.0" style="-fx-background-color: #fff;" vvalue="0.23" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3600.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3550.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
                <children>
                   <Line endX="1266.0" layoutX="101.0" layoutY="50.0" opacity="0.57" startX="-100.0" />
                   <HBox layoutX="177.0" layoutY="8.0">
@@ -174,6 +174,13 @@
                               <Font name="Microsoft YaHei" size="16.0" />
                            </font>
                         </Button>
+                        <Label layoutX="731.0" layoutY="345.0" text="库存" textFill="#aaaaaa" />
+                        <Text fill="#aaaaaa" layoutX="758.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000" />
+                        <Label layoutX="791.0" layoutY="346.0" text="件" textFill="#aaaaaa">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="14.0" layoutY="664.0" opacity="0.85" prefHeight="1000.0" prefWidth="480.0" style="-fx-background-color: #f7f7f7; -fx-border-color: #eee;" AnchorPane.leftAnchor="10.0">
@@ -223,20 +230,22 @@
                               <Insets left="25.0" />
                            </padding>
                         </Label>
-                        <Label layoutX="54.0" layoutY="86.0" text="商品名称" textFill="#777777" />
+                        <Label layoutX="54.0" layoutY="86.0" text="商品名称" textFill="#555555" />
                         <Text fill="#999999" layoutX="114.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUJI 高靠背可伸缩沙发/１座/聚酯纤维平纹" wrappingWidth="236.767578125" />
-                        <Label layoutX="54.0" layoutY="115.0" text="品牌" />
-                        <Text fill="#999999" layoutX="114.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUJI/无印良品" wrappingWidth="236.767578125" />
-                        <Label layoutX="393.0" layoutY="86.0" text="商品ID" />
+                        <Label layoutX="54.0" layoutY="115.0" text="品牌" textFill="#555555" />
+                        <Text fill="#999999" layoutX="114.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="葱花不严选" wrappingWidth="236.767578125" />
+                        <Label layoutX="393.0" layoutY="86.0" text="商品ID" textFill="#555555">
+                           <font>
+                              <Font name="Microsoft YaHei" size="12.0" />
+                           </font></Label>
                         <Text fill="#999999" layoutX="445.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 4547315084203" wrappingWidth="236.767578125" />
-                        <Label layoutX="393.0" layoutY="115.0" prefHeight="15.0" prefWidth="53.0" text="适用对象" />
+                        <Label layoutX="393.0" layoutY="115.0" prefHeight="15.0" prefWidth="53.0" text="适用对象" textFill="#555555" />
                         <Text fill="#999999" layoutX="446.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="成人" wrappingWidth="236.767578125" />
                         <Label layoutX="54.0" layoutY="187.0" text="MUJI 高靠背可伸缩沙发/１座/聚酯纤维平纹">
                            <font>
                               <Font name="Microsoft YaHei Bold" size="22.0" />
                            </font>
                         </Label>
-                        <Label layoutX="54.0" layoutY="237.0" text="腰部的斜靠功能可用拉杆简单操作" textFill="#999999" />
                         <Label layoutX="54.0" layoutY="314.0" text="细节展示图">
                            <font>
                               <Font name="Microsoft YaHei Bold" size="18.0" />
@@ -273,9 +282,10 @@
                               <Image url="@../../articleImg/productUseInfoImg.jpg" />
                            </image>
                         </ImageView>
+                        <Text fill="#999999" layoutX="54.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="腰部的斜靠功能可用拉杆简单操作" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="-56.0" layoutY="3373.0" prefHeight="150.0" prefWidth="1366.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <AnchorPane layoutX="1.0" layoutY="3298.0" prefHeight="150.0" prefWidth="1366.0" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
                      <children>
                         <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="464.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -303,9 +313,9 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="1.0" layoutY="3230.0" prefHeight="120.0" prefWidth="1366.0" style="-fx-background-color: #fff;" styleClass="indexBottom">
+                  <AnchorPane layoutX="10.0" layoutY="3203.0" prefHeight="120.0" prefWidth="1366.0" style="-fx-background-color: #fff;" styleClass="indexBottom" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
-                        <ImageView fitHeight="120.0" fitWidth="1291.0" layoutX="170.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="91.8209228515625">
+                        <ImageView fitHeight="120.0" fitWidth="1291.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <image>
                               <Image url="@../../indexImg/indexBottom.PNG" />
                            </image>
